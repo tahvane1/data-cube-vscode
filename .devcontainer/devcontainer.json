@@ -1,0 +1,26 @@
+{
+    "name": "DATA-CUBE-VSCODE",
+    "dockerComposeFile": "../docker-compose.yaml",
+    "service": "jupyter",
+    "workspaceFolder": "/notebooks",
+    "extensions": [
+		"ms-python.python",
+		"ms-toolsai.jupyter",
+		"ms-python.vscode-pylance",
+    "visualstudioexptteam.vscodeintellicode",
+    "magicstack.magicpython",
+	],
+    "settings": { 
+      "terminal.integrated.shell.linux": "/bin/bash",
+      "python.pythonPath": "/env/lib/python3.6",
+      "python.analysis.extraPaths": ["/env/lib/python3.6/site-packages"],
+      "python.autoComplete.extraPaths": ["/env/lib/python3.6/site-packages"],
+      "python.linting.enabled": true,
+  //  "python.jediPath": "/env/lib/python3.6/site-packages",
+   //   "python.jediEnabled": true,
+      "python.languageServer": "Pylance",
+      "python.linting.pylintEnabled": true,
+      "jupyter.alwaysTrustNotebooks": true,
+      "python.linting.pylintPath": "/env/bin/pylint"
+    },
+  }
